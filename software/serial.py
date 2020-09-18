@@ -5,7 +5,7 @@ import uselect
 test for serial communication
 here we just create a serial object that will take in data to be parsed and sent over the serial port
 """
-print("imported")
+#print("imported")
 
 
 class Serial:
@@ -36,8 +36,10 @@ class Serial:
 
     def readDataPoll(self, timeout=100):  # amount2Read=0):
         """use poll method to see how many characters are available for reading, 
-        read them, and return it
+        read them, and return it.
+        timeout is time in milliseconds. timeout=-1 means there is no timeout.
         OBS: need to learn what is the UART buffer size and implement controls on the PC side"""
+
         poll = uselect.poll()
         poll.register(self.uart, uselect.POLLIN)
         # set the duration for waiting

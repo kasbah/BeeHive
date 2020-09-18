@@ -16,7 +16,7 @@ class Pins:
         self.din12 = machine.Pin(12, machine.Pin.IN)
         self.din13 = machine.Pin(13, machine.Pin.IN)
         self.din14 = machine.Pin(14, machine.Pin.IN)
-        self.din27 = machine.Pin(27, machine.Pin.IN)
+        self.din27 = machine.Pin(15, machine.Pin.IN)
 
         # analog inputs # MAX 3.3V should be used!
         self.adc35 = machine.ADC(35)#currently A0 is pin 34.

@@ -8,7 +8,7 @@ import sys
 from uosc.server import run_server
 
 
-DEFAULT_ADDRESS = "0.0.0.0"
+DEFAULT_ADDRESS = "192.168.43.255"
 DEFAULT_PORT = 9001
 
 

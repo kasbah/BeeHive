@@ -43,7 +43,8 @@ class Tasks:
         startTiming = time.ticks_us()  # get microsecond counter
         stopTiming = time.ticks_us()  # get microsecond counter
         while stopTiming - startTiming < duration:
-            
+            #if there are functions passed as arguments, 
+            #run them here.
             stopTiming = time.ticks_us()
 
 
